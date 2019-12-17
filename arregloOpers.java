@@ -65,23 +65,28 @@ class arregloOpers {
 	do{
     	System.out.print("Cuantos valores introduciras? : ");
 		nd = entrada.nextInt();				
+		System.out.println();
 	  } while(nd < 1);
 	int[] matriz = new int[nd];    // se especifica el tamaño de el arreglo
         
     // aca de captura los datos del arreglo
+	System.out.println();
     for (int i=0;i<matriz.length;i++) {
         System.out.print("Introduce un valor numerico entero: ");
         matriz[i] = entrada.nextInt();
     }
 
 	// se listan los elementos del arreglo
+	System.out.println();
 	listArreglo(matriz);
+	System.out.println();
  
 	// aca se muestra el valor màximo del arreglo
 	System.out.println("El valor máximo del arreglo es: " + maxArray(matriz) );
+	System.out.println();
 
 	// aca se muestra el valor mínimo del arreglo
 	System.out.println("El valor mínimo del arreglo es: " + minArray(matriz) );
-
+	System.out.println();
   }
 }
